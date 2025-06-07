@@ -69,8 +69,8 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3                                &kp N4  &kp N5                                   &kp N6            &kp N7  &kp N8                                   &kp N9   &kp N0    &trans
-&kp TAB    &kp Q   &kp W   &kp E                                 &kp R   &kp T                                    &kp Y             &kp U   &kp I                                    &kp O    &kp P     &kp MINUS
+&kp ESC    &kp N1  &kp N2  &kp N3                                &kp N4  &kp N5                                   &kp N6            &kp N7  &kp N8                                   &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB    &kp Q   &kp W   &kp E                                 &kp R   &kp T                                    &kp Y             &kp U   &kp I                                    &kp O    &kp P     &kp NON_US_BACKSLASH
 &kp LCTRL  &kp A   &kp S   &kp D                                 &kp F   &kp G                                    &kp H             &kp J   &kp K                                    &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X   &kp C                                 &kp V   &kp B            &trans       &trans     &kp N             &kp M   &kp COMMA                                &kp DOT  &kp FSLH  &trans
                            &hold_layer_change_tap_kp 3 LEFT_WIN  &trans  &left_tap_dance  &kp ENTER    &kp SPACE  &right_tap_dance  &trans  &hold_layer_change_tap_kp 3 PRINTSCREEN
@@ -79,21 +79,21 @@
 
         left_mod {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                             &trans           &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                             &trans           &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                             &trans           &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans           &trans    &trans  &trans           &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &always_to_zero  &trans    &trans  &always_to_zero  &trans  &trans
+&trans            &trans  &trans  &trans  &trans  &trans                             &trans           &trans  &trans  &trans  &trans  &kp BACKSPACE
+&trans            &trans  &trans  &trans  &trans  &trans                             &trans           &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans                             &trans           &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT    &trans  &trans  &trans  &trans  &trans           &trans    &trans  &trans           &trans  &trans  &trans  &trans  &trans
+                                  &trans  &trans  &always_to_zero  &trans    &trans  &always_to_zero  &trans  &trans
             >;
         };
 
         right_mod {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                             &trans           &trans    &trans   &trans     &trans  &kp BSPC
-&trans  &trans  &trans  &trans  &trans  &trans                             &trans           &kp U     &kp I    &kp P      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                             &kp UP_ARROW     &kp DOWN  &kp UP   &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans           &trans    &trans  &kp HOME         &kp HOME  &kp END  &kp END    &trans  &trans
-                        &trans  &trans  &always_to_zero  &trans    &trans  &always_to_zero  &trans    &trans
+&kp ESC           &trans  &trans  &trans  &trans  &bt BT_CLR                               &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &trans     &trans  &kp BSPC
+&kp TAB           &trans  &trans  &trans  &trans  &trans                                   &trans           &trans        &trans        &trans     &trans  &trans
+&kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &kp HASH                                 &kp UP_ARROW     &kp DOWN      &kp UP        &kp RIGHT  &trans  &trans
+&kp LEFT_SHIFT    &trans  &trans  &trans  &trans  &trans           &trans       &trans     &kp HOME         &kp HOME      &kp END       &kp END    &trans  &kp DELETE
+                                  &trans  &trans  &always_to_zero  &kp MINUS    &kp EQUAL  &always_to_zero  &trans        &trans
             >;
         };
 
