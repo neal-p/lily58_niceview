@@ -91,7 +91,7 @@
             bindings = <
 &trans  &none  &none  &none   &none   &bt BT_CLR                               &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &none      &none  &kp BSPC
 &trans  &none  &none  &none   &none   &none                                    &none            &none         &none         &none      &none  &trans
-&trans  &none  &none  &none   &none   &none                                    &kp UP_ARROW     &kp DOWN      &kp UP        &kp RIGHT  &none  &trans
+&trans  &none  &none  &none   &none   &none                                    &kp LEFT         &kp DOWN      &kp UP        &kp RIGHT  &none  &trans
 &trans  &none  &none  &none   &none   &none            &trans       &trans     &kp HOME         &kp HOME      &kp END       &kp END    &none  &kp DELETE
                       &trans  &trans  &always_to_zero  &kp MINUS    &kp EQUAL  &always_to_zero  &trans        &trans
             >;
