@@ -56,6 +56,29 @@
         };
     };
 
+    macros {
+        open_close_parenthesis: open_close_parenthesis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            label = "OPEN_CLOSE_PARENTHESIS";
+        };
+
+        open_close_brackets: open_close_brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW>;
+            label = "OPEN_CLOSE_BRACKETS";
+        };
+
+        open_close_square_brackets: open_close_square_brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
+            label = "OPEN_CLOSE_SQUARE_BRACKETS";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -89,11 +112,11 @@
 
         right_mod {
             bindings = <
-&trans  &none  &none  &none   &none   &bt BT_CLR                               &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &none      &none  &kp BSPC
-&trans  &none  &none  &none   &none   &none                                    &none            &none         &none         &none      &none  &trans
-&trans  &none  &none  &none   &none   &none                                    &kp LEFT         &kp DOWN      &kp UP        &kp RIGHT  &none  &trans
-&trans  &none  &none  &none   &none   &none            &trans       &trans     &kp HOME         &kp HOME      &kp END       &kp END    &none  &kp DELETE
-                      &trans  &trans  &always_to_zero  &kp MINUS    &kp EQUAL  &always_to_zero  &trans        &trans
+&trans  &none  &none  &none                        &none   &bt BT_CLR                               &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &none      &none  &kp BSPC
+&trans  &none  &none  &open_close_square_brackets  &none   &none                                    &none            &none         &none         &none      &none  &trans
+&trans  &none  &none  &open_close_parenthesis      &none   &none                                    &kp LEFT         &kp DOWN      &kp UP        &kp RIGHT  &none  &trans
+&trans  &none  &none  &open_close_brackets         &none   &none            &trans       &trans     &kp HOME         &kp HOME      &kp END       &kp END    &none  &kp DELETE
+                      &trans                       &trans  &always_to_zero  &kp MINUS    &kp EQUAL  &always_to_zero  &trans        &trans
             >;
         };
 
