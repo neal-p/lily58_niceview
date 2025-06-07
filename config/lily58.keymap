@@ -72,7 +72,7 @@
 &kp ESC    &kp N1  &kp N2  &kp N3                                &kp N4  &kp N5                                   &kp N6            &kp N7  &kp N8                                   &kp N9   &kp N0    &kp BACKSPACE
 &kp TAB    &kp Q   &kp W   &kp E                                 &kp R   &kp T                                    &kp Y             &kp U   &kp I                                    &kp O    &kp P     &kp NON_US_BACKSLASH
 &kp LCTRL  &kp A   &kp S   &kp D                                 &kp F   &kp G                                    &kp H             &kp J   &kp K                                    &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C                                 &kp V   &kp B            &trans       &trans     &kp N             &kp M   &kp COMMA                                &kp DOT  &kp FSLH  &trans
+&kp LSHFT  &kp Z   &kp X   &kp C                                 &kp V   &kp B            &trans       &trans     &kp N             &kp M   &kp COMMA                                &kp DOT  &kp FSLH  &kp DELETE
                            &hold_layer_change_tap_kp 3 LEFT_WIN  &trans  &left_tap_dance  &kp ENTER    &kp SPACE  &right_tap_dance  &trans  &hold_layer_change_tap_kp 3 PRINTSCREEN
             >;
         };
@@ -91,7 +91,7 @@
             bindings = <
 &trans  &none  &none  &none   &none   &bt BT_CLR                               &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &none      &none  &kp BSPC
 &trans  &none  &none  &none   &none   &none                                    &none            &none         &none         &none      &none  &trans
-&trans  &none  &none  &none   &none   &kp HASH                                 &kp UP_ARROW     &kp DOWN      &kp UP        &kp RIGHT  &none  &trans
+&trans  &none  &none  &none   &none   &none                                    &kp UP_ARROW     &kp DOWN      &kp UP        &kp RIGHT  &none  &trans
 &trans  &none  &none  &none   &none   &none            &trans       &trans     &kp HOME         &kp HOME      &kp END       &kp END    &none  &kp DELETE
                       &trans  &trans  &always_to_zero  &kp MINUS    &kp EQUAL  &always_to_zero  &trans        &trans
             >;
