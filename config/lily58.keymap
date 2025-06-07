@@ -79,31 +79,31 @@
 
         left_mod {
             bindings = <
-&trans            &trans  &trans  &trans  &trans  &trans                             &trans           &trans  &trans  &trans  &trans  &kp BACKSPACE
-&trans            &trans  &trans  &trans  &trans  &trans                             &trans           &trans  &trans  &trans  &trans  &trans
-&kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans                             &trans           &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT    &trans  &trans  &trans  &trans  &trans           &trans    &trans  &trans           &trans  &trans  &trans  &trans  &trans
-                                  &trans  &trans  &always_to_zero  &trans    &trans  &always_to_zero  &trans  &trans
+&trans  &none  &none  &none   &none   &none                              &none            &none   &none   &none  &none  &trans
+&trans  &none  &none  &none   &none   &none                              &none            &none   &none   &none  &none  &none
+&trans  &none  &none  &none   &none   &none                              &none            &none   &none   &none  &none  &none
+&trans  &none  &none  &none   &none   &none            &trans    &trans  &none            &none   &none   &none  &none  &trans
+                      &trans  &trans  &always_to_zero  &trans    &trans  &always_to_zero  &trans  &trans
             >;
         };
 
         right_mod {
             bindings = <
-&kp ESC           &trans  &trans  &trans  &trans  &bt BT_CLR                               &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &trans     &trans  &kp BSPC
-&kp TAB           &trans  &trans  &trans  &trans  &trans                                   &trans           &trans        &trans        &trans     &trans  &trans
-&kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &kp HASH                                 &kp UP_ARROW     &kp DOWN      &kp UP        &kp RIGHT  &trans  &trans
-&kp LEFT_SHIFT    &trans  &trans  &trans  &trans  &trans           &trans       &trans     &kp HOME         &kp HOME      &kp END       &kp END    &trans  &kp DELETE
-                                  &trans  &trans  &always_to_zero  &kp MINUS    &kp EQUAL  &always_to_zero  &trans        &trans
+&trans  &none  &none  &none   &none   &bt BT_CLR                               &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &none      &none  &kp BSPC
+&trans  &none  &none  &none   &none   &none                                    &none            &none         &none         &none      &none  &trans
+&trans  &none  &none  &none   &none   &kp HASH                                 &kp UP_ARROW     &kp DOWN      &kp UP        &kp RIGHT  &none  &trans
+&trans  &none  &none  &none   &none   &none            &trans       &trans     &kp HOME         &kp HOME      &kp END       &kp END    &none  &kp DELETE
+                      &trans  &trans  &always_to_zero  &kp MINUS    &kp EQUAL  &always_to_zero  &trans        &trans
             >;
         };
 
         danger {
             bindings = <
-&sys_reset  &bootloader  &bt BT_CLR_ALL  &trans  &trans  &trans                    &trans  &trans  &trans  &bt BT_CLR_ALL  &bootloader  &sys_reset
-&trans      &trans       &trans          &trans  &trans  &trans                    &trans  &trans  &trans  &trans          &trans       &trans
-&trans      &trans       &trans          &trans  &trans  &trans                    &trans  &trans  &trans  &trans          &trans       &trans
-&trans      &trans       &trans          &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans          &trans       &trans
-                                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&sys_reset  &bootloader  &bt BT_CLR_ALL  &none  &none  &none                            &none            &none  &none  &bt BT_CLR_ALL  &bootloader  &sys_reset
+&none       &none        &none           &none  &none  &none                            &none            &none  &none  &none           &none        &none
+&none       &none        &none           &none  &none  &none                            &none            &none  &none  &none           &none        &none
+&none       &none        &none           &none  &none  &none            &none    &none  &none            &none  &none  &none           &none        &none
+                                         &none  &none  &always_to_zero  &none    &none  &always_to_zero  &none  &none
             >;
         };
     };
