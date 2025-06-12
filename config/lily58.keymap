@@ -58,7 +58,7 @@
         underscore_minus: underscore_minus {
             compatible = "zmk,behavior-mod-morph";
             label = "UNDERSCORE_MINUS";
-            bindings = <&kp LS(UNDERSCORE)>, <&kp LS(MINUS)>;
+            bindings = <&kp UNDERSCORE>, <&kp MINUS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
